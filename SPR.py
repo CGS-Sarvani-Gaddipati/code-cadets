@@ -19,21 +19,12 @@ results = {('paper', 'rock'): name,
        ('rock', 'scissors'): name,
        ('rock', 'paper'): 'computer',
        ('rock', 'rock'): 'draw'}
-#human_move = ''
 for i in range(game_amount):
-    #last_move = human_move
-    #ai = {last_move: []}
     import random
-    #if last_move in ai:
-        #computer_move = random.choice([ai[last_move]])
-    #else:
-        #computer_move = random.choice(['rock', 'scissors', 'paper'])
     computer_move = random.choice(['rock', 'scissors', 'paper'])
     print(f'Hello {name}!')
     human_move = input('What is your move? scissors, paper or rock? ')
     human_move = human_move.lower()
-    #ai[last_move].append(human_move)
-    #print(ai)
     while human_move not in ['paper', 'scissors', 'rock', 'quit']:
         human_move = input('What is your move? scissors, paper or rock? ')
         human_move = human_move.lower()
